@@ -11,8 +11,3 @@ permissions:
      mode: 755
      type:
        - file
-hooks:
-	BeforeInstall:
-		- location: cleanup-before-deploy.sh
-		  timeout: 300
-		  runas: root
