@@ -11,3 +11,8 @@ permissions:
      mode: 755
      type:
        - file
+hooks:
+	BeforeInstall:
+		- location: /scripts/petclinic-clean-before-deploy.sh
+		  timeout: 300
+		  runas: root
