@@ -13,6 +13,6 @@ permissions:
        - file
 hooks:
 	BeforeInstall:
-		- location: /scripts/petclinic-clean-before-deploy.sh
+		- location: cleanup-before-deploy.sh
 		  timeout: 300
 		  runas: root
