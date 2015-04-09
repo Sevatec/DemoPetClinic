@@ -19,7 +19,6 @@
     <jsp:include page="fragments/footer.jsp"/>
 
 </div>
-Last Build Time: <c:out value="${systemProperties['buildTimestamp']}"/>
-	</body>
+</body>
 
 </html>
