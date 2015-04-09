@@ -358,7 +358,12 @@
 	<!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
 	<build>
 		<defaultGoal>install</defaultGoal>
-		
+		<resources>
+	      <resource>
+	        <directory>src/main/resources</directory>
+	        <filtering>true</filtering>
+	      </resource>
+	    </resources>
 		<testResources>
 		  <testResource>
 		  	<!-- declared explicitly so Spring config files can be placed next to their corresponding JUnit test class 
@@ -468,26 +473,6 @@
 				    </goals>
 				  </execution>
 				</executions>
-			</plugin>
-			<plugin>
-			    <groupId>org.codehaus.mojo</groupId>
-			    <artifactId>properties-maven-plugin</artifactId>
-			    <version>1.0-alpha-2</version>
-			    <executions>
-			        <execution>
-			            <goals>
-			                <goal>set-system-properties</goal>
-			            </goals>
-			            <configuration>
-			                <properties>
-			                    <property>
-			                        <name>buildTimestamp</name>
-			                        <value>${timestamp}</value>
-			                    </property>
-			                </properties>
-			            </configuration>
-			        </execution>
-			    </executions>
 			</plugin>
 		</plugins>
 		

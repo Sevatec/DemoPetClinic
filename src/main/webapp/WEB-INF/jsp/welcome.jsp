@@ -19,6 +19,7 @@
     <jsp:include page="fragments/footer.jsp"/>
 
 </div>
+Version 1
 </body>
 
 </html>
