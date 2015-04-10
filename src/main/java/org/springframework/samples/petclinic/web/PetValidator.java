@@ -47,9 +47,9 @@ public class PetValidator {
         }
     }
     
-    public void finalize(){
+    /*public void finalize(){
     	//Exists solely for testing of findbugs.
     	System.out.println("TEST!");
-    }
+    }*/
 
 }
