@@ -46,5 +46,10 @@ public class PetValidator {
             errors.rejectValue("birthDate", "required", "required");
         }
     }
+    
+    public void finalize(){
+    	//Exists solely for testing of findbugs.
+    	System.out.println("TEST!");
+    }
 
 }
