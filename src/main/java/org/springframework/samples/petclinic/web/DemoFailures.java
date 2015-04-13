@@ -11,11 +11,11 @@ package org.springframework.samples.petclinic.web;
  */
 public class DemoFailures {
 	//Error - Build - Will cause the build to fail by compile error.	
-	public int failBuild(){
+	/*public int failBuild(){
 		String oops = "";
 		
 		return oops;
-	}
+	}*/
 	
 	//Error - FindBugs - Normal Priority
 	public void finalize(){
