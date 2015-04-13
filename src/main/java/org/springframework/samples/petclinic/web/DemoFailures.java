@@ -18,7 +18,7 @@ public class DemoFailures {
 	}*/
 	
 	//Error - FindBugs - Normal Priority
-	public void finalize(){
+	/*public void finalize(){
 		System.out.println("TEST!");
 	}
 	
@@ -40,5 +40,5 @@ public class DemoFailures {
 		int twelve = 10+2;
 		
 		return twelve;
-	}
+	}*/
 }
