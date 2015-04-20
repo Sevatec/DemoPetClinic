@@ -12,17 +12,22 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
-        http://www.springframework.org/schema/context/spring-context.xsd">
+        http://www.springframework.org/schema/context/spring-context.xsd"
+        xmlns:util="http://www.springframework.org/schema/util">
 
     <import resource="mvc-view-config.xml"/>
-
+    
     <!--
         - POJOs labeled with the @Controller and @Service annotations are auto-detected.
     -->
     <context:component-scan
             base-package="org.springframework.samples.petclinic.web"/>
             
-    <context:property-placeholder location="classpath:spring/stage.properties" system-properties-mode="OVERRIDE"/>
+    <util:properties id="propertyConfigurer" 
+                  location="classpath:spring/stage.properties"/>    
+    <!-- <context:property-placeholder location="classpath:spring/stage.properties" system-properties-mode="OVERRIDE"/> -->
+    <context:property-placeholder properties-ref="propertyConfigurer" />
+    
 
     <mvc:annotation-driven conversion-service="conversionService"/>
 
