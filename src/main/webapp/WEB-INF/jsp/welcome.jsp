@@ -7,8 +7,7 @@
 <html lang="en">
 
 <jsp:include page="fragments/staticFiles.jsp"/>
-<!--<jsp:useBean id="systemProperties" class="org.springframework.samples.petclinic.util.SystemProperties" scope="application" />
--->
+<jsp:useBean id="systemProperties" class="org.springframework.samples.petclinic.util.SystemProperties" scope="application" />
 <body>
 <div class="container">
     <jsp:include page="fragments/bodyHeader.jsp"/>
