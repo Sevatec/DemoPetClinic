@@ -7,13 +7,14 @@
        xmlns:p="http://www.springframework.org/schema/p"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
-        http://www.springframework.org/schema/context/spring-context.xsd"
-        xmlns:util="http://www.springframework.org/schema/util">
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/util">
 
     <import resource="mvc-view-config.xml"/>
     
@@ -24,7 +25,7 @@
             base-package="org.springframework.samples.petclinic.web"/>
             
     <util:properties id="propertyConfigurer" 
-                  location="classpath:spring/stage.properties"/>    
+                  location="classpath:spring/stage.properties"/>
     <!-- <context:property-placeholder location="classpath:spring/stage.properties" system-properties-mode="OVERRIDE"/> -->
     <context:property-placeholder properties-ref="propertyConfigurer" />
     
