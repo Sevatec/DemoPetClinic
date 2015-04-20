@@ -51,7 +51,12 @@
     -->
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"
           p:basename="messages/messages"/>
-
+	
+	<!-- Environment label source for this context. Loaded from environment.properties -->
+	<bean id="propertyPlaceholder" class="org.springframework.samples.petclinic.util.EnvironmentPropertyPlaceholderConfigurer">
+    	<property name="location" value="classpath:environment.properties" />
+	</bean>
+	
     <!--
         - This bean resolves specific types of exceptions to corresponding logical 
         - view names for error views.
