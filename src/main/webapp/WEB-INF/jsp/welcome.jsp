@@ -18,7 +18,7 @@
     <jsp:include page="fragments/footer.jsp"/>
 
 </div>
-<p>${environment}</p>
+<p>${environmentlabel}</p>
 <p>${petsImage}</p>
 </body>
 
