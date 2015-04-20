@@ -19,6 +19,7 @@
 
 </div>
 <p>${environmentlabel}</p>
+<p>${required}</p>
 <p>${petsImage}</p>
 </body>
 
