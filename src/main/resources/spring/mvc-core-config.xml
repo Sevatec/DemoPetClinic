@@ -21,6 +21,8 @@
     -->
     <context:component-scan
             base-package="org.springframework.samples.petclinic.web"/>
+            
+    <!-- <context:property-placeholder location="classpath:spring/test.properties" system-properties-mode="OVERRIDE"/> -->
 
     <mvc:annotation-driven conversion-service="conversionService"/>
 
@@ -50,11 +52,11 @@
         - Files are stored inside src/main/resources
     -->
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"
-          p:basename="messages/messages"/>
+          p:basename="messages/messages{foo}"/>
           
 	<!-- Environment label source for this context. Loaded from environment.properties -->
 	<!--  <bean id="propertyPlaceholder" class="org.springframework.samples.petclinic.util.EnvironmentPropertyPlaceholderConfigurer">
-    	<property name="location" value="environment.properties" />
+    	<property name="location" value="classpath:environment.properties" />
 	</bean>-->
 	
     <!--
