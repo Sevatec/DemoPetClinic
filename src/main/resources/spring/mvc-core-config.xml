@@ -22,13 +22,7 @@
         - POJOs labeled with the @Controller and @Service annotations are auto-detected.
     -->
     <context:component-scan
-            base-package="org.springframework.samples.petclinic.web"/>
-            
-    <util:properties id="propertyConfigurer" 
-                  location="classpath:spring/stage.properties"/>
-    <!-- <context:property-placeholder location="classpath:spring/stage.properties" system-properties-mode="OVERRIDE"/> -->
-    <context:property-placeholder properties-ref="propertyConfigurer" />
-    
+            base-package="org.springframework.samples.petclinic.web"/>  
 
     <mvc:annotation-driven conversion-service="conversionService"/>
 
@@ -61,9 +55,9 @@
           p:basename="messages/messages"/>
           
 	<!-- Environment label source for this context. Loaded from environment.properties -->
-	<!--  <bean id="propertyPlaceholder" class="org.springframework.samples.petclinic.util.EnvironmentPropertyPlaceholderConfigurer">
-    	<property name="location" value="classpath:environment.properties" />
-	</bean>-->
+	<bean id="propertyPlaceholder" class="org.springframework.samples.petclinic.util.EnvironmentPropertyPlaceholderConfigurer">
+    	<property name="location" value="classpath:spring/stage.properties" />
+	</bean>
 	
     <!--
         - This bean resolves specific types of exceptions to corresponding logical 

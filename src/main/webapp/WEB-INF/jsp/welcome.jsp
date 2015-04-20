@@ -7,6 +7,7 @@
 <html lang="en">
 
 <jsp:include page="fragments/staticFiles.jsp"/>
+<jsp:useBean id="systemProperties" class="org.springframework.samples.petclinic.util.SystemProperties" scope="application" />
 
 <body>
 <div class="container">
@@ -18,12 +19,10 @@
     <jsp:include page="fragments/footer.jsp"/>
 
 </div>
-<p>${environmentlabel}</p>
-<p>${required}</p>
 <h2><fmt:message key="required"/></h2>
-<h2><fmt:message key="environmentlabel"/></h2>
-<spring:eval expression="@propertyConfigurer.getProperty('environmentlabel')" />
 <p>${petsImage}</p>
+<p>${systemProperties["JAVA_HOME"]}</p>
+<p>${systemProperties.JAVA_HOME}</p>
 </body>
 
 </html>
