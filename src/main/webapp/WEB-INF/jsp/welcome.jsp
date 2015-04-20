@@ -20,6 +20,8 @@
 </div>
 <p>${environmentlabel}</p>
 <p>${required}</p>
+<h2><fmt:message key="required"/></h2>
+<h2><fmt:message key="environmentlabel"/></h2>
 <p>${petsImage}</p>
 </body>
 
