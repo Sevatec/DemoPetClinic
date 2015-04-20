@@ -12,4 +12,8 @@ public class SystemProperties extends HashMap<String,String>{
     public String get(Object name) {
         return System.getProperty(name != null ? name.toString() : null);
     }
+	
+	public String getTest(){
+		return "Test Complete";
+	}
 }
