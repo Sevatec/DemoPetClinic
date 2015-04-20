@@ -53,9 +53,9 @@
           p:basename="messages/messages"/>
           
 	<!-- Environment label source for this context. Loaded from environment.properties -->
-	<bean id="propertyPlaceholder" class="org.springframework.samples.petclinic.util.EnvironmentPropertyPlaceholderConfigurer">
+	<!--  <bean id="propertyPlaceholder" class="org.springframework.samples.petclinic.util.EnvironmentPropertyPlaceholderConfigurer">
     	<property name="location" value="environment.properties" />
-	</bean>
+	</bean>-->
 	
     <!--
         - This bean resolves specific types of exceptions to corresponding logical 

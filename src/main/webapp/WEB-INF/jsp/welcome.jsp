@@ -18,7 +18,8 @@
     <jsp:include page="fragments/footer.jsp"/>
 
 </div>
-<h3><fmt:message key="environment"/></h3>
+<p>${environment}</p>
+<p>${petsImage}</p>
 </body>
 
 </html>
