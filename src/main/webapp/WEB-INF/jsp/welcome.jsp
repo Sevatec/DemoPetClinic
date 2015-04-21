@@ -19,7 +19,8 @@
 </div>
 <br/>
 <div class="container" align="right">
-	<u>Environment</u><fmt:message key="environment"/>
+	<u>Environment</u><br/>
+	<fmt:message key="environment"/>
 </div>
 </body>
 

@@ -358,14 +358,11 @@
 	<!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
 	<build>
 		<defaultGoal>install</defaultGoal>
-		<filters>
-		  <filter>src/main/resources/stage.properties</filter>
-		</filters>
 		<resources>
-		  <resource>
+		  <!-- <resource>
 		    <directory>src/main/resources/messages</directory>
 		    <filtering>true</filtering>
-		  </resource>
+		  </resource>-->
 	      <resource>
 	        <directory>src/main/resources</directory>
 	        <filtering>true</filtering>
