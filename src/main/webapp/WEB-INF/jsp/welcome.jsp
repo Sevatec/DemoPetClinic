@@ -18,10 +18,7 @@
     <jsp:include page="fragments/footer.jsp"/>
 
 </div>
-<h2><fmt:message key="required"/></h2>
-<p>${petsImage}</p>
-<p>${systemProperties['JAVA_OPTS']}</p>
-<p>${systemProperties.test}</p>
+<h2><fmt:message key="environment"/></h2>
 </body>
 
 </html>

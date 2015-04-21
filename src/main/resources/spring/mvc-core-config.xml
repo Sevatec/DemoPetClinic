@@ -24,9 +24,7 @@
     <context:component-scan
             base-package="org.springframework.samples.petclinic.web"/>  
 	
-	<context:property-placeholder ignore-unresolvable="true" location="file:/environment.properties"/>
-    <mvc:annotation-driven conversion-service="conversionService"/>
-
+	
     <!--  all resources inside folder src/main/webapp/resources are mapped so they can be refered to inside JSP files
         (see header.jsp for more details) -->
     <mvc:resources mapping="/resources/**" location="/resources/"/>
@@ -53,12 +51,7 @@
         - Files are stored inside src/main/resources
     -->
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"
-          p:basename="messages/messages${environmentlabel}"/>
-      
-	<!-- Environment label source for this context. Loaded from environment.properties -->
-	<bean id="propertyPlaceholder" class="org.springframework.samples.petclinic.util.EnvironmentPropertyPlaceholderConfigurer">
-    	<property name="location" value="classpath:spring/stage.properties" />
-	</bean>
+          p:basename="messages/messages"/><!-- ${environmentlabel} messages/messages-->
 	
     <!--
         - This bean resolves specific types of exceptions to corresponding logical 
