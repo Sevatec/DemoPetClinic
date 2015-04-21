@@ -17,8 +17,10 @@
     <jsp:include page="fragments/footer.jsp"/>
 
 </div>
-<h2><fmt:message key="environment"/></h2>
-<h2><fmt:message key="test"/></h2>
+<br/>
+<div class="container" align="right">
+	<u>Environment</u><fmt:message key="environment"/>
+</div>
 </body>
 
 </html>
