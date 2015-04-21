@@ -7,7 +7,6 @@
 <html lang="en">
 
 <jsp:include page="fragments/staticFiles.jsp"/>
-<jsp:useBean id="systemProperties" class="org.springframework.samples.petclinic.util.SystemProperties" scope="application" />
 <body>
 <div class="container">
     <jsp:include page="fragments/bodyHeader.jsp"/>
@@ -19,6 +18,7 @@
 
 </div>
 <h2><fmt:message key="environment"/></h2>
+<h2><fmt:message key="test"/></h2>
 </body>
 
 </html>
